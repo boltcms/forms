@@ -32,7 +32,7 @@ class RecaptchaService
         $this->registry = $extensionRegistry;
     }
 
-    public function setKeys(?string $siteKey = null, string $secretKey): void
+    public function setKeys(?string $siteKey = null, ?string $secretKey): void
     {
         // Note: $siteKey is not used, but here to stay in sync with HcaptchaService.php
         $this->secretKey = $secretKey;
